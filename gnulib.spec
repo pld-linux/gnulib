@@ -11,7 +11,7 @@ Source0:	%{name}-%{snap}.tar.bz2
 Source1:	%{name}-tool.1
 Source2:	%{name}-check-module.1
 URL:		http://www.gnu.org/software/gnulib/
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The GNU portability library is a macro system and C declarations and
