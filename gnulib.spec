@@ -8,7 +8,7 @@ Release:	0.%{snap}.1
 License:	GPL
 Group:		Development
 Source0:	http://git.savannah.gnu.org/cgit/gnulib.git/snapshot/%{name}-%{commit}.tar.gz
-# Source0-md5:	5d3548c827b7d67c96ac7810cf4e6662
+# Source0-md5:	f28105160545cf882210750873b9d06d
 Source1:	%{name}-tool.1
 Source2:	%{name}-check-module.1
 URL:		http://www.gnu.org/software/gnulib/
