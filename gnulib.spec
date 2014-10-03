@@ -1,14 +1,14 @@
-%define		snap	20130521
-%define		commit	9ceceed274f83094127f9ff0bf061293c9fe1e7f
+%define		snap	20140929
+%define		commit	322e0b052c80b30792e8e7343f5e08e813e0d6fe
 Summary:	GNU Portability Library
-Summary(pl.UTF-8):	biblioteka przenośności GNU
+Summary(pl.UTF-8):	Biblioteka przenośności GNU
 Name:		gnulib
 Version:	0
 Release:	0.%{snap}.1
-License:	GPL
+License:	GPL v2.0+/3.0+ (generally), LGPL v2.1+/3.0+ (some modules)
 Group:		Development
 Source0:	http://git.savannah.gnu.org/cgit/gnulib.git/snapshot/%{name}-%{commit}.tar.gz
-# Source0-md5:	f28105160545cf882210750873b9d06d
+# Source0-md5:	f611046df35a4164b4b5476ea0244b5e
 Source1:	%{name}-tool.1
 Source2:	%{name}-check-module.1
 URL:		http://www.gnu.org/software/gnulib/
@@ -47,4 +47,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/check-module
 %attr(755,root,root) %{_bindir}/gnulib-tool
 %{_datadir}/gnulib
-%{_mandir}/man1/*.1*
+%{_mandir}/man1/check-module.1*
+%{_mandir}/man1/gnulib-tool.1*
