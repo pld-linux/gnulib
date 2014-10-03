@@ -7,7 +7,8 @@ Version:	0
 Release:	0.%{snap}.1
 License:	GPL v2.0+/3.0+ (generally), LGPL v2.1+/3.0+ (some modules)
 Group:		Development
-Source0:	http://git.savannah.gnu.org/cgit/gnulib.git/snapshot/%{name}-%{commit}.tar.gz
+#Source0:	http://git.savannah.gnu.org/cgit/gnulib.git/snapshot/%{name}-%{commit}.tar.gz
+Source0:	%{name}-%{commit}.tar.gz
 # Source0-md5:	f611046df35a4164b4b5476ea0244b5e
 Source1:	%{name}-tool.1
 Source2:	%{name}-check-module.1
