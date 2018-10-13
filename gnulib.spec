@@ -4,13 +4,14 @@ Summary:	GNU Portability Library
 Summary(pl.UTF-8):	Biblioteka przenośności GNU
 Name:		gnulib
 Version:	0
-Release:	0.%{snap}.1
+Release:	0.%{snap}.2
 License:	GPL v2.0+/3.0+ (generally), LGPL v2.1+/3.0+ (some modules)
 Group:		Development
 Source0:	http://git.savannah.gnu.org/cgit/gnulib.git/snapshot/%{name}-%{commit}.tar.gz
 # Source0-md5:	3b15e5f01d613b6c40ef5a8dab622a39
 Source1:	%{name}-tool.1
 Source2:	%{name}-check-module.1
+Patch0:		%{name}-paths.patch
 URL:		http://www.gnu.org/software/gnulib/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,6 +29,7 @@ programów.
 
 %prep
 %setup -q -n %{name}-%{commit}
+%patch0 -p1
 sed -ie 's@\(^\| \)gnulib_dir=.*@\1gnulib_dir=%{_datadir}/gnulib@' gnulib-tool
 
 %install

@@ -1,0 +1,8 @@
+--- gnulib-6c3b072e6a48d45455b37420caf14b804cbba23c/lib/uniname/gen-uninames.lisp~	2018-10-13 07:19:39.000000000 +0200
++++ gnulib-6c3b072e6a48d45455b37420caf14b804cbba23c/lib/uniname/gen-uninames.lisp	2018-10-13 12:18:59.526606409 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/clisp -C
++#!/usr/bin/clisp -C
+ 
+ ;;; Creation of gnulib's uninames.h from the UnicodeData.txt table.
+ ;;; Bruno Haible 2000-12-28
