@@ -1,5 +1,5 @@
-%define		snap	20140929
-%define		commit	322e0b052c80b30792e8e7343f5e08e813e0d6fe
+%define		snap	20181013
+%define		commit	6c3b072e6a48d45455b37420caf14b804cbba23c
 Summary:	GNU Portability Library
 Summary(pl.UTF-8):	Biblioteka przenośności GNU
 Name:		gnulib
@@ -8,7 +8,7 @@ Release:	0.%{snap}.1
 License:	GPL v2.0+/3.0+ (generally), LGPL v2.1+/3.0+ (some modules)
 Group:		Development
 Source0:	http://git.savannah.gnu.org/cgit/gnulib.git/snapshot/%{name}-%{commit}.tar.gz
-# Source0-md5:	f611046df35a4164b4b5476ea0244b5e
+# Source0-md5:	3b15e5f01d613b6c40ef5a8dab622a39
 Source1:	%{name}-tool.1
 Source2:	%{name}-check-module.1
 URL:		http://www.gnu.org/software/gnulib/
