@@ -4,7 +4,7 @@ Summary:	GNU Portability Library
 Summary(pl.UTF-8):	Biblioteka przenośności GNU
 Name:		gnulib
 Version:	0
-Release:	0.%{snap}.2
+Release:	0.%{snap}.3
 License:	GPL v2.0+/3.0+ (generally), LGPL v2.1+/3.0+ (some modules)
 Group:		Development
 Source0:	http://git.savannah.gnu.org/cgit/gnulib.git/snapshot/%{name}-%{commit}.tar.gz
@@ -49,5 +49,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/check-module
 %attr(755,root,root) %{_bindir}/gnulib-tool
 %{_datadir}/gnulib
+%exclude %{_datadir}/gnulib/lib/uniname/gen-uninames.lisp
 %{_mandir}/man1/check-module.1*
 %{_mandir}/man1/gnulib-tool.1*
