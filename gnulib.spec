@@ -40,6 +40,9 @@ cp -a build-aux config doc lib m4 modules tests $RPM_BUILD_ROOT%{_datadir}/gnuli
 install %{SOURCE1} $RPM_BUILD_ROOT%{_mandir}/man1
 install %{SOURCE2} $RPM_BUILD_ROOT%{_mandir}/man1/check-module.1
 
+# this is a build-time generator, not needed
+%{__rm} $RPM_BUILD_ROOT%{_datadir}/gnulib/lib/uniname/gen-uninames.lisp
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -49,6 +52,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/check-module
 %attr(755,root,root) %{_bindir}/gnulib-tool
 %{_datadir}/gnulib
-%exclude %{_datadir}/gnulib/lib/uniname/gen-uninames.lisp
 %{_mandir}/man1/check-module.1*
 %{_mandir}/man1/gnulib-tool.1*
