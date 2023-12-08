@@ -15,6 +15,8 @@ Patch0:		%{name}-paths.patch
 URL:		http://www.gnu.org/software/gnulib/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_debugsource_packages	0
+
 %description
 The GNU portability library is a macro system and C declarations and
 definitions for commonly-used API elements and abstracted system
