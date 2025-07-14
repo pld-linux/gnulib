@@ -31,7 +31,7 @@ programów.
 
 %prep
 %setup -q -n %{name}-%{commit}
-%patch0 -p1
+%patch -P0 -p1
 sed -ie 's@\(^\| \)gnulib_dir=.*@\1gnulib_dir=%{_datadir}/gnulib@' gnulib-tool
 
 %install
